@@ -5,7 +5,7 @@ import { useCurrentUser } from "../src/hooks/auth/useCurrentUser";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
-  const currentUser = useCurrentUser();
+  const { user: currentUser } = useCurrentUser();
 
   return (
     <div className={styles.container}>
